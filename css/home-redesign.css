@@ -647,3 +647,11 @@ section {
 .case-content .thanks {
     margin-bottom: 96px;
 }
+
+@media (max-width: 767px) {
+    section {
+        width: calc(100% - 32px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
