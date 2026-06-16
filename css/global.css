@@ -1,0 +1,183 @@
+/* CSS RESET */
+body,
+img,
+h1,
+p,
+fieldset,
+legend,
+label,
+input,
+select,
+textarea,
+ul,
+li,
+button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* CORES */
+    --color-background-neutral-0: #FFFFFF;
+    --color-background-neutral-5: #F5F5F7;
+
+    --color-button-primary-30: #71B2F4;
+    --color-button-primary-50: #106DCB;
+    --color-button-primary-70: #0D549C;
+
+    --color-text-neutral-80: #333333;
+    --color-text-neutral-5: #F5F5F7;
+
+    --color-primary-50: #106DCB;
+    --color-primary-70: #0D549C;
+
+    --color-neutral-10: #E5E5E6;
+    --color-neutral-30: #CBCBCD;
+    --color-neutral-80: #333333;
+
+    /* TIPOGRAFIA */
+
+    /* Família */
+    --font-family-primary: "Montserrat", sans-serif;
+
+    /* Tamanhos */
+    --font-size-xs: 0.75rem;
+    /* 12px - labels, legendas */
+
+    --font-size-sm: 0.875rem;
+    /* 14px - texto secundário */
+
+    --font-size-b: 1rem;
+    /* 16px - texto padrão */
+
+    --font-size-m: 1.125rem;
+    /* 18px - parágrafo grande */
+
+    --font-size-l: 1.25rem;
+    /* 20px - subtítulos */
+
+    --font-size-xl: 1.5rem;
+    /* 24px - títulos médios */
+
+    --font-size-2xl: 1.75rem;
+    /* 28px - título intermediário */
+
+    --font-size-3xl: 2rem;
+    /* 32px - títulos grandes */
+
+    --font-size-4xl: 2.5rem;
+    /* 40px - destaques */
+
+    --font-size-5xl: 3rem;
+    /* 48px - hero */
+
+    /* Pesos */
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+}
+
+body {
+    font-family: var(--font-family-primary);
+    color: var(--color-text-neutral-80);
+    background-color: var(--color-background-neutral-5);
+}
+
+section {
+    max-width: 312px;
+    width: 100%;
+    margin: 88px auto;
+    padding: 0;
+}
+
+.section-title {
+    width: 280px;
+    margin: 0 0 32px;
+}
+
+.section-title h2 {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    margin: 0;
+    text-align: left;
+}
+
+.section-title hr {
+    width: 180px;
+    height: 4px;
+    background-color: var(--color-primary-50);
+    border: none;
+    margin: 16px 0 32px;
+}
+
+.button {
+    background: var(--color-primary-50);
+    color: var(--color-text-neutral-5);
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* TOAST */
+.toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
+    background: var(--color-neutral-80);
+    color: var(--color-text-neutral-5);
+    border-radius: 8px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    font-size: 14px;
+    z-index: 9999;
+}
+
+.toast.show {
+    opacity: 1;
+}
+
+.toast.error {
+    background: #d9534f;
+}
+
+
+
+@media screen and (min-width:768px) {
+    section {
+        max-width: 648px;
+    }
+
+    .section-title {
+        width: 100%;
+    }
+
+    .section-title h2 {
+        font-size: var(--font-size-2xl);
+    }
+}
+
+@media screen and (min-width:1024px) {
+    section {
+        max-width: 900px;
+    }
+
+    .button:hover {
+        background-color: var(--color-button-primary-70);
+    }
+}
+
+@media screen and (min-width:1440px) {
+    section {
+        max-width: 1200px;
+    }
+}

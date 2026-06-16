@@ -1,0 +1,102 @@
+.projects-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* ---------- CARD BASE ---------- */
+.card {
+    background: var(--color-background-neutral-0);
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.card-link {
+    text-decoration: none;
+    color: var(--color-text-neutral-80);
+    cursor: pointer;
+}
+
+/* ----------- MOBILE FIRST ----------- */
+.card-content {
+    display: flex;
+    flex-direction: column-reverse;
+    /* imagem em cima no mobile */
+}
+
+.card .text {
+    padding: 2rem;
+}
+
+.card .text h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.card .text p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.card .image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ----------- DESKTOP (≥1024px) ----------- */
+@media screen and (min-width: 1024px) {
+
+    /* Conteúdo do card */
+    .card-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .card .text {
+        flex: 1;
+        padding: 2rem;
+    }
+
+    .card .text h3 {
+        font-size: 1.5rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .card .image {
+        flex: 1;
+    }
+
+    .card .image.first {
+        padding: 3rem;
+    }
+
+    .card .image.second {
+        padding: 3rem;
+    }
+
+
+    .card-content.second {
+        flex-direction: row-reverse;
+    }
+
+    .card .image img {
+        height: 100%;
+        border-radius: 12px;
+    }
+
+    .card .text {
+        padding: 3rem;
+    }
+}

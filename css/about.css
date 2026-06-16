@@ -1,0 +1,111 @@
+.about-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.about-photo img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about-info h2 {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-neutral-80);
+}
+
+.about-info p {
+    max-width: 700px;
+    font-size: var(--font-size-m);
+    line-height: 1.6;
+    color: var(--color-text-neutral-80);
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.about-content h3 {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 1.5rem;
+    color: var(--color-text-neutral-80);
+}
+
+.job,
+.certificate {
+    margin-bottom: 1.5rem;
+}
+
+.job h4,
+.certificate h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.job h4,
+.certificate h4 {
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-neutral-80);
+}
+
+.job-period,
+.cert-issuer {
+    font-size: var(--font-size-sm);
+    color: #666;
+    margin-bottom: 0.3rem;
+}
+
+.job-role {
+    font-size: var(--font-size-b);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-neutral-80);
+    margin-bottom: 0.4rem;
+}
+
+.job-desc,
+.cert-desc {
+    font-size: 0.95rem;
+    color: var(--color-neutral-80);
+    line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+    .about-header {
+        flex-direction: row;
+        text-align: left;
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+
+    .about-photo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-info h2 {
+        font-size: var(--font-size-3xl);
+    }
+
+    .about-content {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 4rem;
+    }
+
+    .experience,
+    .certificates {
+        flex: 1;
+    }
+}

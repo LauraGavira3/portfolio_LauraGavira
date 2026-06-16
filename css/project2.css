@@ -1,0 +1,88 @@
+/* =========================
+   HERO (APENAS PROJETO 2)
+========================= */
+.case-cp .case-hero {
+    max-width: 800px;
+    margin-bottom: 64px;
+    gap: 24px;
+}
+
+.case-cp .case-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0;
+}
+
+.case-cp .case-section li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 12px;
+    font-size: var(--font-size-l);
+    line-height: 1.7;
+    color: var(--color-text-neutral-80);
+}
+
+.case-cp .case-section li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--color-primary-50);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* remove layout lateral herdado */
+@media screen and (min-width: 1024px) {
+    .case-cp .case-hero {
+        flex-direction: column;
+    }
+}
+
+/* melhora texto */
+.case-cp .case-hero-text p {
+    max-width: 680px;
+}
+
+/* imagem mais protagonista */
+.case-cp .case-hero-image img {
+    margin-top: 8px;
+}
+
+
+/* =========================
+   SECTIONS (REFINO)
+========================= */
+.case-cp .case-section {
+    max-width: 800px;
+    margin-bottom: 64px;
+}
+
+.case-cp .case-section p {
+    margin-bottom: 16px;
+}
+
+
+/* =========================
+   BULLETS (UPGRADE)
+========================= */
+.case-cp .case-section ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 16px;
+}
+
+.case-cp .case-section li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+}
+
+/* bolinha custom só no projeto 2 */
+.case-cp .case-section li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--color-primary-50);
+    font-size: 1.2rem;
+}

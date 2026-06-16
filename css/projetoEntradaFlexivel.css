@@ -1,0 +1,68 @@
+/* =========================
+   HERO (PROJETO ENTRADA FLEXÍVEL)
+========================= */
+.case-ef .case-hero {
+    max-width: 800px;
+    margin-bottom: 64px;
+    gap: 24px;
+}
+
+.case-ef .case-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0;
+}
+
+.case-ef .case-section li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 12px;
+    font-size: var(--font-size-l);
+    line-height: 1.7;
+    color: var(--color-text-neutral-80);
+}
+
+.case-ef .case-section li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--color-primary-50);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+.case-ef .case-section {
+    max-width: 800px;
+    margin-bottom: 64px;
+}
+
+.case-ef .case-section p {
+    margin-bottom: 16px;
+}
+
+/* =========================
+   BULLETS
+========================= */
+.case-ef .case-section ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 16px;
+}
+
+.case-ef .case-section li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+}
+
+.case-ef .case-section li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--color-primary-50);
+    font-size: 1.2rem;
+}

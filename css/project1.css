@@ -1,0 +1,125 @@
+.case-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* HERO */
+.case-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.case-hero-text {
+    max-width: 720px;
+}
+
+.case-hero-text h1 {
+    margin-bottom: 0.5rem;
+}
+
+.case-hero-text p {
+    font-size: var(--font-size-xl);
+    color: var(--color-text-neutral-80);
+    margin-top: 1rem;
+    line-height: 1.6;
+}
+
+.case-hero-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.case-hero-image img {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.bench1 {
+    margin-bottom: 56px;
+}
+
+section p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+section strong {
+    color: var(--color-text-neutral-80);
+    font-weight: 600;
+}
+
+/* SECTIONS */
+.case-section {
+    margin-bottom: 4rem;
+}
+
+.case-section h2 {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-neutral-90);
+    margin-bottom: 1rem;
+}
+
+.case-section p {
+    font-size: var(--font-size-l);
+    color: var(--color-text-neutral-80);
+    line-height: 1.7;
+}
+
+.case-section img {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* =========================
+   AJUSTES ESPECÍFICOS PROJETO 1
+========================= */
+.case-password .case-hero {
+    max-width: 800px;
+    margin-bottom: 64px;
+    gap: 24px;
+}
+
+.case-password .case-hero-text p {
+    max-width: 680px;
+}
+
+.case-password .case-hero-image img {
+    max-width: 800px;
+    margin-bottom: 16px;
+}
+
+.case-password .case-section {
+    max-width: 800px;
+    margin-bottom: 64px;
+}
+
+.case-password .case-section p {
+    margin-bottom: 16px;
+}
+
+/* ---------- DESKTOP (≥1024px) ---------- */
+@media screen and (min-width: 1024px) {
+    .case-hero {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .case-hero-text h1 {
+        font-size: var(--font-size-4xl);
+    }
+
+    .case-password .case-hero {
+        flex-direction: column;
+    }
+}
